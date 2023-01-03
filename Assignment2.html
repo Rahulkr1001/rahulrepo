@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .green{
+            background-color: rgb(140, 210, 140);
+        }
+        .blue{
+            background-color: rgb(117, 117, 196);
+        }
+        .yellow{
+            background-color: rgb(232, 232, 163);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="3"><b>Day</b></th>
+                <th colspan="3"><b>Seminar</b></th>
+            </tr>
+            <tr>
+                <th colspan="2"><b>Schedule</b></th>
+                <th rowspan="2"><b>Topic</b></th>
+            </tr>
+            <tr>
+                <th><b>Begin</b></th>
+                <th><b>End</b></th>
+            </tr>
+        </thead>
+        <tr>
+           <tbody>
+            <td rowspan="2"> Monday</td>
+            <td class="yellow" rowspan="2">8:00 a.m</td>
+            <td class="blue" rowspan="2">5:00 p.m</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <td>Validity DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td class="yellow">8:00 a.m</td>
+            <td class="yellow">11:00 a.m</td>
+            <td rowspan="2">XPATH</td>
+        </tr>
+        <tr>
+            <td class="yellow">11:00 a.m</td>
+            <td class="green">2:00 p.m</td>
+        </tr>
+        <tr>
+            <td class="green">2:00 p.m</td>
+            <td class="blue">5:00 p.m</td>
+            <td>XSL Transformations</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td class="yellow">8:00 p.m</td>
+            <td class="green">12:00 p.m</td>
+            <td>  XSL Formating Objects</td>
+        </tr>
+           </tbody>
+    </table>
+</body>
+</html>
